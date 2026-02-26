@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephen Kwagga | ML Engineer & Data Scientist</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; }
 
+    header {
+      background: #161b22;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 { font-size: 2.5rem; color: #58a6ff; }
+    header p.title { color: #8b949e; font-size: 1.1rem; margin: 8px 0 20px; }
+    header p.bio { max-width: 700px; margin: 0 auto; line-height: 1.7; color: #c9d1d9; }
+
+    .badges { margin: 20px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .badge {
+      background: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 0.85rem;
+      color: #58a6ff;
+    }
+
+    section { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+    section h2 { font-size: 1.6rem; color: #58a6ff; margin-bottom: 30px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 24px;
+      transition: border-color 0.3s;
+    }
+    .card:hover { border-color: #58a6ff; }
+    .card h3 { color: #c9d1d9; font-size: 1rem; margin-bottom: 10px; }
+    .card p { font-size: 0.88rem; color: #8b949e; line-height: 1.6; margin-bottom: 16px; }
+    .card .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+    .card .tag { background: #21262d; border-radius: 4px; padding: 3px 10px; font-size: 0.75rem; color: #58a6ff; }
+    .card a { color: #58a6ff; font-size: 0.85rem; text-decoration: none; margin-right: 12px; }
+    .card a:hover { text-decoration: underline; }
+
+    footer { text-align: center; padding: 40px 20px; color: #8b949e; font-size: 0.85rem; border-top: 1px solid #30363d; }
+    footer a { color: #58a6ff; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Stephen Kwagga</h1>
+  <p class="title">ML Engineer & Data Scientist</p>
+  <p class="bio">Building end-to-end machine learning solutions that turn raw data into real decisions. From time series forecasting and fraud detection to patient segmentation, churn prediction, and marketing intelligence — I work across the full ML lifecycle: data wrangling, model development, deployment, and beyond. Cloud-native on AWS, version-controlled on GitHub, and always shipping.</p>
+  <div class="badges">
+    <span class="badge">🐍 Python</span>
+    <span class="badge">☁️ AWS</span>
+    <span class="badge">🤖 Scikit-learn</span>
+    <span class="badge">🔥 TensorFlow</span>
+    <span class="badge">📊 Pandas</span>
+    <span class="badge">⚡ XGBoost</span>
+    <span class="badge">🗄️ SQL</span>
+  </div>
+</header>
+
+<section>
+  <h2>🚀 Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>📈 Time Series Forecasting</h3>
+      <p>End-to-end forecasting pipeline for business metrics. Built with ARIMA, Prophet and LSTM models deployed on AWS.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">AWS</span></div>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>🔍 Fraud Detection</h3>
+      <p>Real-time fraud detection system using anomaly detection and classification models on imbalanced financial data.</p>
+      <div class="tags"><span class="tag">XGBoost</span><span class="tag">SMOTE</span><span class="tag">AWS</span></div>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>🏥 Patient Segmentation</h3>
+      <p>Clustering patients into meaningful groups using K-Means and hierarchical clustering to support clinical decisions.</p>
+      <div class="tags"><span class="tag">K-Means</span><span class="tag">PCA</span><span class="tag">Python</span></div>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>📉 Churn Detection</h3>
+      <p>Predicting customer churn for subscription businesses using behavioral data and ensemble ML models.</p>
+      <div class="tags"><span class="tag">Random Forest</span><span class="tag">SHAP</span><span class="tag">Python</span></div>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Marketing Intelligence</h3>
+      <p>Segmentation and targeting model to identify high-value customer groups and optimize marketing spend.</p>
+      <div class="tags"><span class="tag">Clustering</span><span class="tag">LTV</span><span class="tag">Python</span></div>
+      <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>🌐 Portfolio Website</h3>
+      <p>This portfolio — designed and built from scratch to showcase end-to-end ML projects and data science work.</p>
+      <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span></div>
+      <a href="https://github.com/StephenKwagga/stephenkwagga.github.io">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Built by Stephen Kwagga · <a href="https://github.com/StephenKwagga">GitHub</a></p>
+</footer>
+
+</body>
+  </html>
