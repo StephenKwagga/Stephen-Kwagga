@@ -1,1 +1,1 @@
-# Stephen-Kwagga
+# Stephen Kwagga
