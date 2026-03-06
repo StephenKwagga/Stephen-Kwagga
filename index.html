@@ -1,87 +1,102 @@
-<div style="background: var(--card); border: 1px solid var(--border); border-top: 6px solid var(--gold); border-radius: 12px; padding: 60px; margin-bottom: 60px; box-shadow: 0 20px 40px rgba(0,0,0,0.6);">
-  
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px;">
-    <div>
-      <h1 style="font-size: 2.8rem; color: #fff; margin-bottom: 5px; letter-spacing: -1px;">Stephen Kwagga</h1>
-      <p style="color: var(--primary); font-weight: bold; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px;">Senior Machine Learning Engineer</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stephen Kwagga | Senior ML Engineer</title>
+  <style>
+    :root { --primary: #58a6ff; --bg: #0d1117; --card: #161b22; --border: #30363d; --gold: #f1c40f; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: #c9d1d9; line-height: 1.6; }
+
+    header { padding: 100px 20px; text-align: center; background: linear-gradient(180deg, #161b22 0%, #0d1117 100%); border-bottom: 1px solid var(--border); }
+    header h1 { font-size: 3.2rem; color: #fff; margin-bottom: 10px; letter-spacing: -1px; }
+    .status-pill { display: inline-block; padding: 6px 15px; border-radius: 20px; background: rgba(241, 196, 15, 0.1); color: var(--gold); font-size: 0.8rem; font-weight: bold; border: 1px solid var(--gold); margin-bottom: 20px; }
+    header p.bio { max-width: 800px; margin: 0 auto; color: #8b949e; font-size: 1.1rem; }
+
+    .tech-bar { margin: 30px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+    .tech-tag { background: #21262d; border: 1px solid var(--border); padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; color: #fff; }
+
+    section { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; }
+    
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 35px; transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; }
+    .card:hover { border-color: var(--primary); transform: translateY(-5px); }
+    
+    .card.protected { border-left: 4px solid var(--gold); }
+    .lock-tag { color: var(--gold); font-size: 0.7rem; font-weight: bold; margin-bottom: 10px; display: block; }
+
+    .card h3 { color: #fff; margin-bottom: 15px; font-size: 1.3rem; }
+    .card p { font-size: 0.95rem; color: #8b949e; margin-bottom: 25px; }
+
+    .metrics-box { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; margin-bottom: 25px; display: flex; justify-content: space-between; font-size: 0.85rem; }
+    .metric { color: #fff; font-weight: bold; }
+
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: bold; text-align: center; cursor: pointer; }
+    .btn-locked { background: var(--gold); color: #000; width: 100%; }
+    .btn-public { border: 1px solid var(--primary); color: var(--primary); width: 100%; }
+
+    footer { text-align: center; padding: 80px 20px; border-top: 1px solid var(--border); color: #8b949e; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="status-pill">🔒 SECURE PORTFOLIO - ACCESS CONTROLLED</div>
+  <h1>Stephen Kwagga</h1>
+  <p class="bio">Senior ML Engineer specializing in <strong>End-to-End Production Systems</strong>. I build proprietary solutions for Time-Series Forecasting and Financial Anomaly Detection. Expert in <strong>PyTorch, AWS, and MLOps</strong>.</p>
+  <div class="tech-bar">
+    <span class="tech-tag">PyTorch</span><span class="tech-tag">AWS</span><span class="tech-tag">XGBoost</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Streamlit</span><span class="tech-tag">Docker</span>
+  </div>
+</header>
+
+<section>
+  <h2 style="color: #fff; margin-bottom: 30px;">🚀 Production Systems (Private IP)</h2>
+  <div class="grid">
+    
+    <div class="card protected">
+      <span class="lock-tag">PROPRIETARY ENGINE</span>
+      <h3>Household Energy End-to-End</h3>
+      <p>High-precision forecasting system with real-time inference. Integrated with Streamlit for smart-meter data visualization.</p>
+      <div class="metrics-box">
+        <div>MAE: <span class="metric">0.042</span></div>
+        <div>Scale: <span class="metric">1M+ Records</span></div>
+      </div>
+      <a href="mailto:your-email@example.com?subject=Access Request: Energy Hub Demo" class="btn btn-locked">Request Technical Walkthrough</a>
     </div>
-    <div style="text-align: right;">
-      <span style="display: block; color: var(--gold); font-weight: bold; font-size: 0.9rem; margin-bottom: 5px;">PROJECT REF: PROD-ENERGY-XGB</span>
-      <span style="color: #4cd137; font-size: 0.8rem; font-weight: bold; background: rgba(76, 209, 55, 0.1); padding: 5px 12px; border: 1px solid #4cd137; border-radius: 4px;">● STATUS: DEPLOYED / STABLE</span>
+
+    <div class="card protected">
+      <span class="lock-tag">PROPRIETARY ENGINE</span>
+      <h3>Credit Card Fraud Detection</h3>
+      <p>Real-time anomaly detection system. Optimized for cost-sensitive classification on imbalanced financial streams.</p>
+      <div class="metrics-box">
+        <div>Recall: <span class="metric">99.1%</span></div>
+        <div>Inference: <span class="metric">&lt;150ms</span></div>
+      </div>
+      <a href="mailto:your-email@example.com?subject=Access Request: Fraud Detection Proof" class="btn btn-locked">View Metrics & Results</a>
     </div>
+
   </div>
 
-  <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 40px;">
-
-  <div style="margin-bottom: 40px;">
-    <h2 style="font-size: 2rem; color: #fff; margin-bottom: 10px;">⚡ Household Energy Consumption: End-to-End Forecasting System</h2>
-    <p style="color: #8b949e; font-size: 1.1rem; font-style: italic;">Proprietary Enterprise Solution | Production-Ready MLOps Pipeline</p>
-  </div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
-    <div style="background: rgba(255,255,255,0.03); padding: 25px; border-radius: 8px; border: 1px solid var(--border);">
-      <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">🎯 Project Task & Objective</h3>
-      <p style="color: #c9d1d9; font-size: 0.95rem; line-height: 1.6;">
-        <strong>Task:</strong> Design and deploy a high-frequency time-series forecasting engine capable of predicting household demand with sub-kilowatt precision.
-        <br><br>
-        <strong>Objective:</strong> Mitigate energy waste and optimize grid distribution by capturing non-linear consumption patterns and seasonal peaks across 1M+ smart-meter data points.
-      </p>
+  <h2 style="color: #fff; margin-top: 60px; margin-bottom: 30px;">📂 Research & Open Code</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Advanced Data Science Research</h3>
+      <p>Curated Deep Learning implementations in PyTorch, covering Sequence Models and Computer Vision foundations.</p>
+      <a href="https://github.com/StephenKwagga/Advance_DataScience_Projects" class="btn btn-public">Explore Repository</a>
     </div>
-    <div style="background: rgba(241, 196, 15, 0.03); padding: 25px; border-radius: 8px; border: 1px dashed var(--gold);">
-      <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">🔒 Intellectual Property Notice</h3>
-      <p style="color: #8b949e; font-size: 0.9rem; line-height: 1.6;">
-        Source code, internal model weights, and proprietary hyperparameter tuning logic are <strong>Strictly Confidential</strong>. This overview serves as a verified architectural proof of concept for recruitment auditing.
-      </p>
+    
+    <div class="card">
+      <h3>Forecasting_Hub (Open)</h3>
+      <p>A collection of baseline statistical and ML models (ARIMA, Prophet) for comparative analysis.</p>
+      <a href="https://github.com/StephenKwagga/Forcasting_Hub" class="btn btn-public">Explore Repository</a>
     </div>
   </div>
+</section>
 
-  <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; margin-bottom: 40px;">
-    <div>
-      <h3 style="color: #fff; margin-bottom: 20px; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px;">🚀 System Architecture</h3>
-      
-      
+<footer>
+  <p>© 2026 Stephen Kwagga. Proprietary logic and system weights are not public to prevent unauthorized redistribution.</p>
+</footer>
 
-      <ul style="list-style: none; color: #8b949e; margin-top: 20px;">
-        <li style="margin-bottom: 15px;">💎 <strong>Inference Engine:</strong> Ensemble of XGBoost & LSTM for hybrid temporal pattern recognition.</li>
-        <li style="margin-bottom: 15px;">⚡ <strong>API Layer:</strong> Production-grade FastAPI implementation with &lt;200ms response time.</li>
-        <li style="margin-bottom: 15px;">🐳 <strong>Deployment:</strong> Containerized via Docker for seamless cloud environment parity.</li>
-        <li style="margin-bottom: 15px;">📊 <strong>Observability:</strong> Real-time SHAP interpretability and drift monitoring.</li>
-      </ul>
-    </div>
-
-    <div>
-      <h3 style="color: #fff; margin-bottom: 20px; border-bottom: 2px solid var(--primary); display: inline-block; padding-bottom: 5px;">📊 Performance Audit</h3>
-      <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-        <tbody style="font-size: 0.95rem;">
-          <tr style="border-bottom: 1px solid var(--border);">
-            <td style="padding: 15px 0; color: #8b949e;">Accuracy (MAPE)</td>
-            <td style="padding: 15px 0; text-align: right; color: var(--gold); font-weight: bold;">98.4%</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border);">
-            <td style="padding: 15px 0; color: #8b949e;">Mean Absolute Error</td>
-            <td style="padding: 15px 0; text-align: right; color: var(--gold); font-weight: bold;">0.042</td>
-          </tr>
-          <tr style="border-bottom: 1px solid var(--border);">
-            <td style="padding: 15px 0; color: #8b949e;">Inference Latency</td>
-            <td style="padding: 15px 0; text-align: right; color: var(--gold); font-weight: bold;">&lt; 200ms</td>
-          </tr>
-          <tr>
-            <td style="padding: 15px 0; color: #8b949e;">Data Volume</td>
-            <td style="padding: 15px 0; text-align: right; color: var(--gold); font-weight: bold;">1M+ Records</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <div style="background: rgba(0,0,0,0.4); padding: 30px; border-radius: 8px; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
-    <div>
-      <p style="color: #fff; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Tech Stack:</p>
-      <span class="tech-tag">Python 3.10</span> <span class="tech-tag">XGBoost</span> <span class="tech-tag">FastAPI</span> <span class="tech-tag">Docker</span> <span class="tech-tag">AWS</span>
-    </div>
-    <div style="text-align: right;">
-      <p style="color: #8b949e; font-size: 0.9rem; margin-bottom: 10px;">Contact Stephen for Technical Audit:</p>
-      <a href="mailto:your-email@example.com?subject=Technical Audit: Energy System Architecture" class="btn btn-locked" style="width: auto; padding: 12px 40px; font-size: 1rem;">Request System Blueprint</a>
-    </div>
-  </div>
-</div>
+</body>
+                                                                                                                                                                                             </html>
